@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">WeaveStory</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">로그인</string>
+    <string name="btn_register">가입하기</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_album_list">AlbumListActivity</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="menu_title">Menu Title</string>
+    <string name="search">Search</string>
+    <string name="Ok">확인</string>
+    <string-array name="menulist">
+        <item>추천 앨범</item>
+        <item>카테고리</item>
+        <item>Dynamic Tab 3</item>
+        <item>Dynamic Tab 4</item>
+        <item>Dynamic Tab 5</item>
+
+    </string-array>
+    <string name="title_activity_gallery_pick">GalleryPickActivity</string>
+    <string name="title_activity_album_view">AlbumViewActivity</string>
+    <string name="help_try_long_click">Long-click for advanced options</string>
+    <string name="help_try_long_click_ok">OK</string>
+    <string name="title_activity_details">DetailsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_set_album">SetAlbumActivity</string>
+    <string name="title_activity_more_view">MoreViewActivity</string>
+
+    <string name="menu_lock">Lock</string>
+    <string name="menu_unlock">Unlock</string>
+    <string name="title_activity_album_make_confirm">AlbumMakeConfirmActivity</string>
+    <string name="title_activity_cover_image_select">CoverImageSelectActivity</string>
+
+
+    <string name="crop_done">확인</string>
+    <string name="crop_cancel" tools:ignore="ButtonCase">취소</string>
+
+</resources>

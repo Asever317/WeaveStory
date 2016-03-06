@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/gallery_pick_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+
+        <ImageButton
+            android:id="@+id/gallery_pick_btn_back"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:allowUndo="false"
+            android:background="@color/button_transparency_background" />
+
+        <TextView
+            android:id="@+id/gallery_pick_tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/gallery_pick_btn_back"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/gallery_pick_btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/gallery_pick_btn_back"
+            android:background="@color/button_transparency_background"
+            android:text="확인"
+            android:textColor="@drawable/gallery_pick_btn_check_selector"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="false"
+        android:listSelector="@android:color/transparent"
+        android:longClickable="false" />
+
+</LinearLayout>

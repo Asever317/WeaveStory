@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/cover_image_select_maincover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/cover_image_select_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/filterbox_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cover_image_select_btn_back"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:allowUndo="false"
+                android:background="@color/button_transparency_background" />
+
+            <TextView
+                android:id="@+id/cover_image_select_lbl_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/cover_image_select_btn_back"
+                android:text="커버사진 선택"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/cover_image_select_btn_check"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@color/button_transparency_background"
+                android:layout_alignTop="@+id/cover_image_select_btn_back"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/cover_image_select_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_filter_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/filterbox_background">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cover_image_select_recv_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cover_image_select_textView" />
+
+        <TextView
+            android:id="@+id/cover_image_select_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="커버사진선택"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

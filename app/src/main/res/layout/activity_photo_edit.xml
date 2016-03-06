@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crop_texture"
+    tools:context="com.asever.weavestory.ui.activity.PhotoEditActivity">
+
+    <include
+        android:id="@+id/photo_edit_done_cancel_bar"
+        layout="@layout/crop_layout_done_cancel" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/photo_edit_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.asever.weavestory.ui.TouchImageView
+                android:id="@+id/photo_edit_item_img1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="12dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="300dp"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/photo_edit_item_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/photo_edit_item_tv_date"
+                android:layout_below="@+id/photo_edit_item_tv_date"
+                android:ellipsize="end"
+                android:hint="(내용을 입력해주세요)"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/photo_edit_item_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/photo_edit_item_img1"
+                android:layout_below="@+id/photo_edit_item_img1"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/photo_crop_bottom_frm"
+        style="@style/Crop.DoneCancelBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/photo_crop_btn_left"
+            style="@style/Crop.ActionButton"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/photo_crop_btn_right"
+            style="@style/Crop.ActionButton"></ImageButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_register"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/album_make_confirm_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/album_make_confirm_btn_back"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:allowUndo="false"
+                android:background="@color/button_transparency_background" />
+
+            <TextView
+                android:id="@+id/album_make_confirm_tv_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/album_make_confirm_btn_back"
+                android:text="앨범정보"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/album_make_confirm_btn_save"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/button_transparency_background" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/album_make_confirm_img_cover"
+                android:layout_width="154dp"
+                android:layout_height="154dp" />
+
+            <ImageButton
+                android:id="@+id/album_make_confirm_btn_changecover"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="bottom|right"
+                android:background="@color/filterbox_background" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/album_make_confirm_etv_albumname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:ellipsize="end"
+            android:hint="앨범이름"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+
+        <!-- Login Button -->
+
+        <!-- Link to Login Screen -->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/md_grey_600" />
+
+    <TextView
+        android:id="@+id/album_make_confirm_tv_makedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="New Text"
+        android:textColor="@color/white" />
+
+    <GridView
+        android:id="@+id/album_make_confirm_gv_selectimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:verticalSpacing="8dp"
+        android:layout_marginBottom="6dp" />
+
+</LinearLayout>

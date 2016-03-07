@@ -80,7 +80,7 @@ public class FilterImage {
                 r = (colorArray[index] >> 16) & 0xff;
                 g = (colorArray[index] >> 8) & 0xff;
                 b = colorArray[index] & 0xff;
-                colorArray[index] = 0xff000000 | (b << 16) | (g << 8) | r;//androidϵͳ��windowϵͳ��rgb�洢��ʽ�෴
+                colorArray[index] = 0xff000000 | (b << 16) | (g << 8) | r;
             }
         }
     }
@@ -132,7 +132,7 @@ public class FilterImage {
         //image.setPixel(x, y, colorArray[((y*image.getWidth()+x))]);
     }
 
-    public void copyPixelsFromBuffer() { //�ӻ�������copy�����Լӿ����ش����ٶ�          	
+    public void copyPixelsFromBuffer() {
         IntBuffer vbb = IntBuffer.wrap(colorArray);
         //vbb.put(colorArray);
         destImage.copyPixelsFromBuffer(vbb);
